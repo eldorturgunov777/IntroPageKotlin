@@ -3,7 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Turonbank/AndroidStudioProjects/IntroPageKotlin/app/src/main/res/drawable-v24/gradient_btn.xml" value="0.152" />
         <entry key="..\:/Users/Turonbank/AndroidStudioProjects/IntroPageKotlin/app/src/main/res/layout/activity_home.xml" value="0.25" />
+        <entry key="..\:/Users/Turonbank/AndroidStudioProjects/IntroPageKotlin/app/src/main/res/layout/activity_main.xml" value="0.2388888888888889" />
         <entry key="..\:/Users/Turonbank/AndroidStudioProjects/IntroPageKotlin/app/src/main/res/layout/layout_screen_design.xml" value="0.33" />
       </map>
     </option>

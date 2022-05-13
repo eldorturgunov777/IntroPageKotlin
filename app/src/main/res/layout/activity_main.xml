@@ -26,7 +26,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="24dp"
-        android:background="@null"
+        app:backgroundTint="@null"
         android:text="Skip"
         android:textColor="#000"
         app:layout_constraintBottom_toBottomOf="@+id/screen_viewpager"
@@ -56,4 +56,6 @@
         app:tabIndicator="@null">
 
     </com.google.android.material.tabs.TabLayout>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

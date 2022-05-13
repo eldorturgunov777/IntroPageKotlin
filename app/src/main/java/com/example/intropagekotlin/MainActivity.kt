@@ -64,20 +64,23 @@ class MainActivity : AppCompatActivity() {
                 list.size
             )
         })
-        tabIndicator?.addOnTabSelectedListener(object : BaseOnTabSelectedListener<kotlin.Any> {
-            override fun onTabSelected(tab: Any?) {
-                if (tab == list.size - 1) {
+        tabIndicator?.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
+
+            override fun onTabSelected(tab: TabLayout.Tab?) {
+//                if (tab == list.size - 1) {
                     loadLastScreen()
-                }
+//                }
             }
 
-            override fun onTabUnselected(tab: Any?) {
-                TODO("Not yet implemented")
+            override fun onTabReselected(tab: TabLayout.Tab?) {
+
             }
 
-            override fun onTabReselected(tab: Any?) {
-                TODO("Not yet implemented")
+            override fun onTabUnselected(tab: TabLayout.Tab?) {
+
             }
+
+
         })
         btnGetStarted?.setOnClickListener(View.OnClickListener { view: View? ->
             val mainActivity = Intent(
@@ -88,6 +91,7 @@ class MainActivity : AppCompatActivity() {
             finish()
         })
     }
+
 
     open fun loadLastScreen() {
         btnSkip?.setVisibility(View.INVISIBLE)

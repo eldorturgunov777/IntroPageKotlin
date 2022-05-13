@@ -11,17 +11,19 @@ class IntroViewPagerAdapter(val context: Context, var list: List<ScreenItem>) :
     PagerAdapter() {
 
     override fun instantiateItem(container: ViewGroup, position: Int): Any {
-        val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE)
-        val view = inflater.
-            .inflate(context, R.layout.layout_screen_design, null)
+        val view = View.inflate(context, R.layout.layout_screen_design, null)
+        val data = list[position]
 
         val imgSlide: ImageView = view.findViewById(R.id.intro_img)
         val title: TextView = view.findViewById(R.id.intro_title)
         val description: TextView = view.findViewById(R.id.intro_description)
 
-        title.setText(list.get(position))
-        description.setText(list.get(position))
-        imgSlide.setImageResource(list.get(position))
+        if (true) {
+
+            title.text = data.Title
+            description.text = data.Description
+            imgSlide.setImageResource(data.ScreenImg)
+        }
 
         container.addView(view)
 
